@@ -1,10 +1,16 @@
 console.log('ehhlo')
-function _copy(text) {
-    if (!typeof data == 'string') {
+function _() {
+    return {
+        "_copy(data)": "copies data to clipboard",
+        "_removeFromArray(array, data)" : "removes from an array if the element matches the second argument"
+    }
+}
+String.prototype.copy = function() {
+    if (!typeof this == 'string') {
         console.error('underdot >> error parsing data in _copy()')
     } else {
             var element = document.createElement("INPUT");
-            element.setAttribute("value", text)
+            element.setAttribute("value", this)
             document.body.appendChild(element);
             element.select();
             document.execCommand("copy");
