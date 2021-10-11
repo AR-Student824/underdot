@@ -1,5 +1,5 @@
 console.log('ehhlo')
-function copy(text) {
+function _copy(text) {
     if (!typeof data == 'string') {
         console.error('underdot >> error parsing data in _.copy()')
     } else {
