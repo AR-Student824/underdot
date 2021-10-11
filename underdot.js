@@ -28,5 +28,9 @@ var _remove = function(array, data) {
 }
 
 var _logArial = function(data) {
+    try {
     console.log(`%c${data}`, 'font-family:Arial;')
+    } catch {
+        console.error('underdot >> failed to log to console')
+    }
 }
