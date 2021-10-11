@@ -65,9 +65,7 @@ var _MDtoHTML = function(data) {
 */
 
 var _load = function(url) {
-    if (typeof url != 'string' || !url.startsWith('https://') || !url.startsWith('http://')) {
-        console.error('underdot >> url is not valid')
-    } else {
+    if (typeof url == 'string' && (url.startsWith('https://') || url.startsWith('http://'))) {
         try {
             fetch(url).then(response => response.text()).then(response => {
                 return eval(response)
@@ -75,5 +73,7 @@ var _load = function(url) {
         } catch {
             console.error('underdot >> failed to load script')
         }
-    }
+    } else {
+        console.error('underdot >> not a valid script url')
+    }   
 }
