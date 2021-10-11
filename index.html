@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1><a href="https://www.blobby.me">blobby</a> underdot.js</h1>
-        <p>a lightweight javascript library that adds to existing functions to make developing easier. not as stupid and heavy as jquery, don&apos;t worry.</p>
+        <p>a lightweight javascript library that adds useful functions to make developing easier.</p>
         <button onclick="'something'.copy()">copy "something"</button>
         <button onclick="console.arial('wow its arial')">log to the console with arial</button>
         <button onclick="document.getElementById('x').style.display='initial';document.getElementById('a').innerHTML = ['a', 'b', 'c'].remove('b')">remove "b" from ["a", "b", "c"]</button>
@@ -16,19 +16,12 @@
         <h2>functions</h2>
         <div class="frcss_cardGrid">
             <div class="frcss_card">
-                <h3>Array.prototype.remove(data)</h3>
+                <h3>_remove(array, data)</h3>
                 <p>removes data from an array</p>
             </div>
-        </div>
-        <h2>things to keep in mind</h2>
-        <div class="frcss_cardGrid">
             <div class="frcss_card">
-                <h3>don&apos;t combine with similar libraries</h3>
-                <p>other libraries may interfere with underdot&apos;s functionality, which can result in broken code.</p>
-            </div>
-            <div class="frcss_card">
-                <h3>features from future js versions</h3>
-                <p>features from future js versions that replace underdot&apos;s functionality shall be removed or renamed asap. you will be warned if this ever happens.</p>
+                <h3>_copy(text)</h3>
+                <p>copy text to the clipboard</p>
             </div>
         </div>
     </body>

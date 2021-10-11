@@ -5,12 +5,12 @@ function _() {
         "_removeFromArray(array, data)" : "removes from an array if the element matches the second argument"
     }
 }
-String.prototype.copy = function() {
-    if (!typeof this == 'string') {
+var _copy = function(text) {
+    if (!typeof text == 'string') {
         console.error('underdot >> error parsing data in _copy()')
     } else {
             var element = document.createElement("INPUT");
-            element.setAttribute("value", this)
+            element.setAttribute("value", text)
             document.body.appendChild(element);
             element.select();
             document.execCommand("copy");
@@ -18,14 +18,14 @@ String.prototype.copy = function() {
     }
 }
 
-Array.prototype.remove = function(data) {
-    if (!typeof this == 'array') {
+var _remove = function(array, data) {
+    if (!typeof array == 'array') {
         console.error('underdot >> error parsing array')
     } else {
-        return this.filter(i => i != data)
+        return array.filter(i => i != data)
     }
 }
 
-console.arial = function(data) {
+var _logArial = function(data) {
     console.log(`%c${data}`, 'font-family:Arial;')
 }
