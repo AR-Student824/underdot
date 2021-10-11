@@ -4,6 +4,11 @@
         <script type="text/javascript" src="/underdot.js"></script>
     </head>
     <body>
-        <button onclick="'something'.copy()">copy something</button>
+        <h1>underdot.js</h1>
+        <p>a lightweight javascript library that adds to existing functions to make developing easier.</p>
+        <button onclick="'something'.copy()">copy "something"</button>
+        <button onclick="console.arial('wow its arial')">log to the console with arial</button>
+        <button onclick="document.getElementById('a').innerHTML = ['a', 'b', 'c'].remove('b')">remove "b" from ["a", "b", "c"]</button>
+        <p id="a"></p>
     </body>
 </html>
