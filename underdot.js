@@ -25,3 +25,7 @@ Array.prototype.remove = function(data) {
         return this.filter(i => i == data)
     }
 }
+
+console.arial = function(data) {
+    console.log(`%c${data}`, 'font-family:Arial;')
+}
