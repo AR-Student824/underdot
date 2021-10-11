@@ -10,7 +10,6 @@
         <h1><a href="https://www.blobby.me">blobby</a> underdot.js</h1>
         <p>a lightweight javascript library that adds useful functions to make developing easier.</p>
         <button onclick="_copy('something')">copy "something"</button>
-        <button onclick="_logArial('wow its arial')">log to the console with arial</button>
         <button onclick="document.getElementById('x').style.display='initial';document.getElementById('a').innerHTML = _remove(['a', 'b', 'c'], 'b')">remove "b" from ["a", "b", "c"]</button>
         <p id="x" style="display:none;">[<span id="a"></span>]</p>
         <h2>functions</h2>
@@ -22,6 +21,10 @@
             <div class="frcss_card">
                 <h3>_copy(text)</h3>
                 <p>copies text to the clipboard</p>
+            </div>
+            <div class="frcss_card">
+                <h3>_escapeHTML(data)</h3>
+                <p>escapes html from a string, preventing xss</p>
             </div>
         </div>
     </body>

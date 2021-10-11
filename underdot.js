@@ -26,3 +26,17 @@ var _remove = function(array, data) {
         console.error('underdot >> failed to remove from array')
     }
 }
+
+var _escapeHTML = function(data) {
+  return str.replace(
+    /[&<>'"]/g,
+    tag =>
+      ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[tag] || tag)
+  );
+}
