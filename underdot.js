@@ -15,6 +15,7 @@ var _copy = function(text) {
             element.select();
             document.execCommand("copy");
             element.remove();
+            return text;
     }
 }
 
