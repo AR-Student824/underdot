@@ -46,3 +46,10 @@ try {
     }
 }
 
+var _formatJSON = function(data) {
+    try {
+        return JSON.stringify(data, null, "\t")
+    } catch {
+        console.error('underdot >> failed to format json')
+    }
+}
