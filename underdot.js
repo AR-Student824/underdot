@@ -1,4 +1,4 @@
-_.copy() = function(text) {
+_copy() = function(text) {
     if (!typeof data == 'string') {
         console.error('underdot >> error parsing data in _.copy()')
     } else {
