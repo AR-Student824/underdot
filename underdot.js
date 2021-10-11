@@ -18,10 +18,10 @@ String.prototype.copy = function() {
     }
 }
 
-function _removeFromArray(array, data) {
-    if (!typeof array == 'array') {
+Array.prototype.remove = function(data) {
+    if (!typeof this == 'array') {
         console.error('underdot >> error parsing array')
     } else {
-        return array.filter(i => i == data)
+        return this.filter(i => i == data)
     }
 }
