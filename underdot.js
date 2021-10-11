@@ -28,6 +28,7 @@ var _remove = function(array, data) {
 }
 
 var _escapeHTML = function(data) {
+try {
   return data.replace(
     /[&<>'"]/g,
     tag =>
@@ -40,5 +41,8 @@ var _escapeHTML = function(data) {
         "'": '&apos;'
       }[tag] || tag)
   );
+    } catch {
+        console.error('underdot >> failed to escape html')
+    }
 }
 
