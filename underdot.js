@@ -6,9 +6,7 @@ function _() {
     }
 }
 var _copy = function(text) {
-    if (!typeof text == 'string') {
-        console.error('underdot >> error parsing data in _copy()')
-    } else {
+    try {
             var element = document.createElement("INPUT");
             element.setAttribute("value", text)
             document.body.appendChild(element);
@@ -16,14 +14,16 @@ var _copy = function(text) {
             document.execCommand("copy");
             element.remove();
             return text;
+    } catch {
+        console.error('underdot >> failed to copy text')
     }
 }
 
 var _remove = function(array, data) {
-    if (!typeof array == 'array') {
-        console.error('underdot >> error parsing array')
-    } else {
+    try {
         return array.filter(i => i != data)
+    } catch {
+        console.error('underdot >> failed to remove from array')
     }
 }
 
