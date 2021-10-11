@@ -28,7 +28,7 @@ var _remove = function(array, data) {
 }
 
 var _escapeHTML = function(data) {
-  return str.replace(
+  return data.replace(
     /[&<>'"]/g,
     tag =>
       ({
