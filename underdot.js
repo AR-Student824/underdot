@@ -22,7 +22,7 @@ Array.prototype.remove = function(data) {
     if (!typeof this == 'array') {
         console.error('underdot >> error parsing array')
     } else {
-        return this.filter(i => i == data)
+        return this.filter(i => i != data)
     }
 }
 
