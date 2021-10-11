@@ -36,7 +36,9 @@ var _escapeHTML = function(data) {
         '<': '&lt;',
         '>': '&gt;',
         "'": '&#39;',
-        '"': '&quot;'
+        '"': '&quot;',
+        "'": '&apos;'
       }[tag] || tag)
   );
 }
+
