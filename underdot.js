@@ -26,11 +26,3 @@ var _remove = function(array, data) {
         console.error('underdot >> failed to remove from array')
     }
 }
-
-var _logArial = function(data) {
-    try {
-    console.log(`%c${data}`, 'font-family:Arial;')
-    } catch {
-        console.error('underdot >> failed to log to console')
-    }
-}
