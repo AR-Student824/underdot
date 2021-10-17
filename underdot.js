@@ -86,3 +86,11 @@ var _proxyURL = function(url) {
     console.error('underdot >> not a valid url')
 }   
 }
+
+var _redirect = function(url) {
+    if (typeof url == 'string' && (url.startsWith('https://') || url.startsWith('http://'))) {
+        return window.location.href=url
+} else {
+    console.error('underdot >> not a valid url')
+}   
+}
