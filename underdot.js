@@ -99,6 +99,6 @@ var _updateTitle = function(data) {
     if (document.querySelectorAll('title')[0]) {
         document.querySelectorAll('title')[0].innerText = data
     } else {
-        document.body.appendChild(document.createElement("title").innerText = data);
+        document.getElementsByTagName('body')[0].appendChild(document.createElement("title").innerText = data);
     }
 }
