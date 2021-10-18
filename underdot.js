@@ -96,9 +96,5 @@ var _redirect = function(url) {
 }
 
 var _updateTitle = function(data) {
-    if (document.querySelectorAll('title')[0]) {
-        document.querySelectorAll('title')[0].innerText = data
-    } else {
-        document.getElementsByTagName('body')[0].appendChild(document.createElement("title").innerText = data);
-    }
+    document.title = data
 }
