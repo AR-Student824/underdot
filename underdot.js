@@ -3,6 +3,7 @@ function _() {
 }
 
 var _c = function (text) {
+    return new Promise((resolve, reject) => {
     if (window && document) {
         try {
             var element = document.createElement("INPUT");
@@ -11,13 +12,14 @@ var _c = function (text) {
             element.select();
             document.execCommand("copy");
             element.remove();
-            return text;
+            resolve(text)
         } catch {
-            console.error('underdot >> failed to copy text')
+            reject('underdot >> failed to copy text')
         }
     } else {
-        console.error('underdot >> must be run in a browser')
+        reject('underdot >> must be run in a browser')
     }
+})
 }
 
 var _rmv = function (array, data) {
