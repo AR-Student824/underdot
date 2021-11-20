@@ -102,3 +102,6 @@ var _t = function (data) {
     })
 }
 
+var _capfirstltr = function (text) {
+    text.charAt(0).toUpperCase() + text.replace(text.charAt(0))
+}
