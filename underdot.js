@@ -102,10 +102,12 @@ var _t = function (data) {
     })
 }
 
+// ! UNDOCUMENTED EXPERIMENTAL
+
 var _capfirstltr = function (text) {
     return new Promise((resolve, reject) => {
         try {
-    resolve(text.charAt(0).toUpperCase() + text.replace(text.charAt(0)))
+    resolve(`${text.charAt(0).toUpperCase()}${text.replace(text.charAt(0))}`)
         } catch {
             reject('underdot >> failed to capitalize first letter in string')
         }
