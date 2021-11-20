@@ -104,7 +104,7 @@ var _t = function (data) {
 
 // ! UNDOCUMENTED EXPERIMENTAL
 
-var _capfirstltr = function (text) {
+var _cfl = function (text) {
     return new Promise((resolve, reject) => {
         try {
     resolve(`${text.charAt(0).toUpperCase()}${text.substring(1)}`)
