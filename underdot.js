@@ -113,3 +113,7 @@ var _cfl = function (text) {
         }
     })
 }
+
+var _caw = function (text) {
+    // captialize all words 
+}
